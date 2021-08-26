@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+       
+    <!-- css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!--  b icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Dreamimbue</title>
+</head>
+        <body> 
+            <div class="bgcollor">
+            <nav class="navbar navbar-expand-md bg-success navbar-dark">
+
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Dreamimbue</a>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#browse" class="nav-link">Browse</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#community" class="nav-link">My Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#help" class="nav-link">Help</a>
+                            </li>
+                        </ul>
+        
+                    </div>
+            </nav>  
+            <section class="bg-dark text-light p-5 text-center text-sm-start">
+                <div class="container">
+                    <div class="d-lg-flex align-items-center justify-content-between">
+                        <div>
+                            <h1>Interested in searching about <span class="text-warning">countries?</span></h1>
+                            <p class="lead-4 my-4"><span class="text-danger">THEN JOIN WITH US.</span><br>Searching about countries and get to know their culture is always a different one.They provide us a lot of ideas.
+                            </p>
+                            
+                        </div>
+                        <br>
+                        <img class="img-fluid w-50 d-none d-sm-block "
+                            src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29ybGQlMjBtYXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80"
+                            alt="World map">
+        
+                    </div>
+        
+                </div>
+            </section>
+            
+            <section class="bg-dark">  
+            <div class="col-lg-4 col-md-4 col-sm-6 mx-auto">
+                <div class="container">
+                    <br>
+                    <input type="text" id="search" placeholder="  Search for country...." class="form-control">
+                </div>
+            </div>
+    <div class="d-flex justify-content-evenly my-4 flex-wrap b-bg-info-4" id="content">
+    </div>
+            
+</div>
+</section>
+<section class="p-4" id="nk-1">
+    <div class="container">
+        <div class="row aligh-center justify-content-between">
+            <div class="col-md">
+                <img fluid src="data:image/png;base64,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" class="img-fluid" alt="...">
+                
+            </div>
+            <div class="col-md">
+                <h2>Read and Share </h2>
+                <p class="lead"> No matter where you decide to study, work or travel, if you want to enjoy your experience, first you must know something about local culture of that particular country. If you don’t, the chances are that you will find yourself experiencing culture shock and feeling a bit disappointed. What is normal and accepted in your country can be something outrageous abroad.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+            <script src="./app.js"></script> 
+           <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+           <!-- java script -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>   
+           <!-- JavaScript Bundle with Popper -->
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+           <div class="d-flex justify-content-center">
+           <footer >Done by Naveenkumar.S.E</footer>
+</div>
+        </body> 
+    
+</html>
